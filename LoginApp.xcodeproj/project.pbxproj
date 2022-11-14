@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FA7B2D31292138EC007C9EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B2D30292138EC007C9EFA /* AppDelegate.swift */; };
 		FA7B2D33292138EC007C9EFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B2D32292138EC007C9EFA /* SceneDelegate.swift */; };
-		FA7B2D35292138EC007C9EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B2D34292138EC007C9EFA /* ViewController.swift */; };
+		FA7B2D35292138EC007C9EFA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B2D34292138EC007C9EFA /* MainViewController.swift */; };
 		FA7B2D38292138EC007C9EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7B2D36292138EC007C9EFA /* Main.storyboard */; };
 		FA7B2D3A292138EF007C9EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7B2D39292138EF007C9EFA /* Assets.xcassets */; };
 		FA7B2D3D292138EF007C9EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7B2D3B292138EF007C9EFA /* LaunchScreen.storyboard */; };
+		FA7B2D4529218363007C9EFA /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B2D4429218363007C9EFA /* GreetingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA7B2D2D292138EC007C9EFA /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7B2D30292138EC007C9EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7B2D32292138EC007C9EFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA7B2D34292138EC007C9EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA7B2D34292138EC007C9EFA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA7B2D37292138EC007C9EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7B2D39292138EF007C9EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA7B2D3C292138EF007C9EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7B2D3E292138EF007C9EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA7B2D4429218363007C9EFA /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				FA7B2D30292138EC007C9EFA /* AppDelegate.swift */,
 				FA7B2D32292138EC007C9EFA /* SceneDelegate.swift */,
-				FA7B2D34292138EC007C9EFA /* ViewController.swift */,
+				FA7B2D34292138EC007C9EFA /* MainViewController.swift */,
+				FA7B2D4429218363007C9EFA /* GreetingViewController.swift */,
 				FA7B2D36292138EC007C9EFA /* Main.storyboard */,
 				FA7B2D39292138EF007C9EFA /* Assets.xcassets */,
 				FA7B2D3B292138EF007C9EFA /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7B2D35292138EC007C9EFA /* ViewController.swift in Sources */,
+				FA7B2D35292138EC007C9EFA /* MainViewController.swift in Sources */,
 				FA7B2D31292138EC007C9EFA /* AppDelegate.swift in Sources */,
 				FA7B2D33292138EC007C9EFA /* SceneDelegate.swift in Sources */,
+				FA7B2D4529218363007C9EFA /* GreetingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
