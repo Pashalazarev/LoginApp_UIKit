@@ -7,7 +7,7 @@
 
 import UIKit
  
-final class MainViewController: UIViewController {
+final class LoginViewController: UIViewController {
     
     // MARK: - Outlets
     
@@ -15,18 +15,17 @@ final class MainViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Private features
+    private let user = User.getUserData()
+    
     private let emptyLogIn = ""
     private let emptyPassword = ""
-    
-    private let userLogIn = "Pavel"
-    private let userPassword = "1234"
-    
     
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let greetingVC = segue.destination as? GreetingViewController else {return}
-        greetingVC.user = userLogIn
+        greetingVC.user = user.login
+        
     }
     
     
@@ -34,7 +33,7 @@ final class MainViewController: UIViewController {
     // MARK: - IBActions
     
     @IBAction func logInButton() {
-        if userNameTF.text != userLogIn || passwordTF.text != userPassword {
+        if userNameTF.text != user.login || passwordTF.text != user.password {
             showAlert(with: "Wrong User Name or Password",
                       and: "Please input correct data")
             userNameTF.text = emptyLogIn
@@ -44,11 +43,11 @@ final class MainViewController: UIViewController {
     
     
     @IBAction func forgotUserNameButton() {
-        showAlert(with: "", and: "User name is \(userLogIn)")
+        showAlert(with: "", and: "User name is \(user.login)")
     }
     
     @IBAction func forgotPasswordButton() {
-        showAlert(with: "", and: "Password is \(userPassword)")
+        showAlert(with: "", and: "Password is \(user.password)")
     }
     
     @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
@@ -60,7 +59,7 @@ final class MainViewController: UIViewController {
 
     // MARK: - Allert Controller
 
-extension MainViewController {
+extension LoginViewController {
     private func showAlert(with title: String, and message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
@@ -71,8 +70,8 @@ extension MainViewController {
     }
     
 }
-// MARK: - Hide Keybord
-extension MainViewController {
+   // MARK: - Hide Keybord
+extension LoginViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
