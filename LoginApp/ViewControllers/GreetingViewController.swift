@@ -16,15 +16,16 @@ class GreetingViewController: UIViewController {
     
    // MARK: - Features
     
-    var user = ""
+    var user: User!
     
     
-    // MARK: - Life сycle
+    // MARK: - Lifeсycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = "Welcome \(user)"
+        welcomeLabel.text = "Welcome \(user.login)"
         emojiLabel.text = "🖐"
+        view.backgroundColor = .systemCyan
         
     }
     

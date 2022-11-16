@@ -23,12 +23,19 @@ final class LoginViewController: UIViewController {
     
     //MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let greetingVC = segue.destination as? GreetingViewController else {return}
-        greetingVC.user = user.login
+       
+        guard let tabBarVC = segue.destination as? UITabBarController else {return}
+        guard let viewControllers = tabBarVC.viewControllers else {return}
         
+        for viewController in viewControllers {
+            if let greetingVC = viewController as? GreetingViewController {
+                greetingVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                guard let transitionVC = navigationVC.topViewController as? TransitionalViewController else {return}
+                transitionVC.user = user
+            }
+        }
     }
-    
-    
     
     // MARK: - IBActions
     

@@ -17,6 +17,7 @@ struct User {
              person: Person(name: "Pavel",
                             surname: "Lazarev",
                             currentAge: 34,
+                            yearOfBirth: 1988,
                             cityOfLiving: "Moscow",
                             userHobbies: ["Playing Soccer",
                                           "Watching Movies",
@@ -29,11 +30,12 @@ struct Person {
     let name: String
     let surname: String
     let currentAge: Int
+    let yearOfBirth: Int
     let cityOfLiving: String
     let userHobbies: [String]
     
     var fullName: String {
-        let fullName = name + surname
+        let fullName = "\(name) \(surname)"
         return fullName
     }
 }

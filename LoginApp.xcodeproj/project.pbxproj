@@ -16,7 +16,7 @@
 		FA7B2D4529218363007C9EFA /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B2D4429218363007C9EFA /* GreetingViewController.swift */; };
 		FACACFE8292400AD00E37AD1 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACACFE7292400AD00E37AD1 /* Person.swift */; };
 		FACACFEB29241AEE00E37AD1 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACACFEA29241AEE00E37AD1 /* UserInfoViewController.swift */; };
-		FACACFED29241BAD00E37AD1 /* UserTransitionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACACFEC29241BAD00E37AD1 /* UserTransitionalViewController.swift */; };
+		FACACFED29241BAD00E37AD1 /* TransitionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACACFEC29241BAD00E37AD1 /* TransitionalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		FA7B2D4429218363007C9EFA /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		FACACFE7292400AD00E37AD1 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FACACFEA29241AEE00E37AD1 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
-		FACACFEC29241BAD00E37AD1 /* UserTransitionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTransitionalViewController.swift; sourceTree = "<group>"; };
+		FACACFEC29241BAD00E37AD1 /* TransitionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 			children = (
 				FA7B2D34292138EC007C9EFA /* LoginViewController.swift */,
 				FA7B2D4429218363007C9EFA /* GreetingViewController.swift */,
-				FACACFEC29241BAD00E37AD1 /* UserTransitionalViewController.swift */,
+				FACACFEC29241BAD00E37AD1 /* TransitionalViewController.swift */,
 				FACACFEA29241AEE00E37AD1 /* UserInfoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -184,7 +184,7 @@
 			files = (
 				FACACFE8292400AD00E37AD1 /* Person.swift in Sources */,
 				FA7B2D35292138EC007C9EFA /* LoginViewController.swift in Sources */,
-				FACACFED29241BAD00E37AD1 /* UserTransitionalViewController.swift in Sources */,
+				FACACFED29241BAD00E37AD1 /* TransitionalViewController.swift in Sources */,
 				FA7B2D31292138EC007C9EFA /* AppDelegate.swift in Sources */,
 				FACACFEB29241AEE00E37AD1 /* UserInfoViewController.swift in Sources */,
 				FA7B2D33292138EC007C9EFA /* SceneDelegate.swift in Sources */,
